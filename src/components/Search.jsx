@@ -2,7 +2,6 @@ import React from 'react'
 import {Paper,IconButton} from '@mui/material'
 import { useState } from 'react'
 import {  useNavigate } from 'react-router-dom'
-//iconbutton:show the result,input:type anything will be change,paper:update the our result
 import {Search} from '@mui/icons-material'
 
 

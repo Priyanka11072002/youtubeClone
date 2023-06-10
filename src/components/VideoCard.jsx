@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typography,Card,CardContent,CardMedia } from '@mui/material'
-import {demoThumbnailUrl,demoChannelUrl,demoVideoUrl,demoChannelTitle,demoVideoTitle } from  '../utils/constants.js'
+import {demoChannelUrl,demoVideoUrl,demoChannelTitle,demoVideoTitle } from  '../utils/constants.js'
 import { CheckCircle} from '@mui/icons-material'
 
 export default function VideoCard({video:{id:{videoId},snippet}}) {

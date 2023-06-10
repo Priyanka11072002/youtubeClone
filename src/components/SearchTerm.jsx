@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link, useParams} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 import {Box,Typography} from '@mui/material'
 import { useState,useEffect } from 'react'
 import Video from './Video'

@@ -5,7 +5,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 import {Box} from '@mui/material'
 
-import {Navbar,Feed,Channel,Search,Sidebar,Video, SearchTerm} from './components'
+import {Navbar,Feed,Channel,Sidebar,SearchTerm} from './components'
 import VideoDetail from './components/Videodetail'
 
 

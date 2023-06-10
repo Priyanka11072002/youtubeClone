@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
-import { Typography, Box, Stack } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import {  Box, Stack } from "@mui/material";
 
 import { Video } from "./";
 import { fetchApi } from "../utils/fetchApi";
@@ -15,7 +14,7 @@ const VideoDetail = () => {
 
   useEffect(() => {
     fetchApi(`videos?part=contentDetails%2Csnippet%2Cstatistics&id=${id}`)
-      .then((data) =>console.log(data.items[0],'VIDEOSID'))
+      .then((data) =>setVideoDetail(data.items[0]))
 
     fetchApi(`/search?relatedToVideoId=${id}&part=id%2Csnippet&type=video&maxResults=50`)
       .then((data) => setVideos(data.items))
