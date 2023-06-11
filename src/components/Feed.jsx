@@ -22,7 +22,7 @@ export default function Feed() {
 console.log(selectedCategory,'selectedCategory')
   return (
     <>
-   
+
    <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box sx={{ height: { sx: "auto", md: "87vh" }, borderRight: "1px solid #3d3d3d", px: { sx: 0, md: 2 } }}>
         <Sidebar  selectedCategory={selectedCategory}  setSelectedCategory={setSelectedCategory}/>
@@ -39,6 +39,7 @@ console.log(selectedCategory,'selectedCategory')
   <Video video={video}/>
        
       </Box>
+
     </Stack>
 
   
