@@ -24,7 +24,7 @@ console.log(channelDetail,'channelDetail')
         <CardMedia
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={channelDetail?.snippet?.title}
-          sx={{ borderRadius: '50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3' }}
+          sx={{ borderRadius: '50%', height: '150px', width: '200px', mb: 2,ml:6, border: '1px solid #e3e3e3' }}
         />
         <Typography variant="h6" sx={{textAlign:'left' }}>
           {channelDetail?.snippet?.title}{' '}
